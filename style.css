@@ -1039,7 +1039,9 @@ textarea:focus {
     max-width: 60px;
     width: 60px;
     margin-bottom: 0; }
-
+.single-preparation-step p{
+  font-size: 20px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ingredients {
     margin-bottom: 80px; } }

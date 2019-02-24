@@ -636,9 +636,12 @@ textarea:focus {
   margin-bottom: 80px;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 500px; }
   .single-top-catagory img {
-    width: 100%; }
+    max-height:250px;
+    width:100%;
+     }
   .single-top-catagory::after {
     content: "";
     position: absolute;
@@ -1380,3 +1383,32 @@ textarea:focus {
     padding-left: 30px; }
 
 /*# sourceMappingURL=style.css.map */
+
+.eventPic{
+  max-height:300px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 80px;
+}
+.myEvent{
+  display:"none";
+}
+.show {
+  display:"";
+}
+.category-btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.category-btn:hover {
+  background-color: #ddd;
+}
+
+.category-btn.active {
+  background-color: #666;
+  color: white;
+}

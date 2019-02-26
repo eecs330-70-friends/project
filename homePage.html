@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Make More Friends</title>
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Make More Friends</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span> 
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav nav-pills flex-column flex-sm-row">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"
+                        >Events<span class="sr-only">(current)</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="myProfile.html">My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://127.0.0.1:5000/">Chat</a>
+                    </li>
+                  </ul>
+           </div>
+        </nav>
+        <div class="section">
+        <ul class="filterSection">
+            <li>
+                <strong>CATEGORY:&nbsp</strong>
+                <input checked="true" type="checkbox" value="Sports"/>
+                <label>Sports</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Amusement"/>
+                <label>Amusement</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Art"/>
+                <label>Art</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Life"/>
+                <label>Life</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Study"/>
+                <label>Study</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Game"/>
+                <label>Game</label>
+            </li>
+        </ul>
+            <input class="search" type="text" name="search" onkeyup="myFunction()" placeholder="Search your event" id="myInput">
+        
+    </div>
+        <div class="container-home">
+        <div class="wrap-events">
+        <section class="top-catagory-area ">
+                <div class="container" id="myEvents">
+                    <ul id="myUL">
+                        <li class="myEvent Sports" data-type="Sports">
+                                <div class="single-top-catagory">
+                                        <img src="pic/Sports.jpg" alt="">
+                                        <!-- Content -->
+                                        <div class="top-cta-content">
+                                            <h3>Play Basketball Together</h3>
+                                            <h6>Sports</h6>
+                                            <a href="event/eventPage1.html" class="btn delicious-btn">Read More</a>
+                                        </div>
+                                    </div>
+                        </li>
+                        <li class="myEvent Study" data-type="Study">
+                                <div class="single-top-catagory">
+                                    <img src="pic/Study.jpg" alt="">
+                                    <!-- Content -->
+                                    <div class="top-cta-content">
+                                        <h3>A Reading Salon</h3>
+                                        <h6>Study</h6>
+                                        <a href="event/eventPage5.html" class="btn delicious-btn">Read More</a>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="myEvent Art" data-type="Art"><div class="single-top-catagory">
+                                <img src="pic/Art.jpg" alt="">
+                                <!-- Content -->
+                                <div class="top-cta-content">
+                                    <h3>Visit Art institute of Chicago Together</h3>
+                                    <h6>Art</h6>
+                                    <a href="event/eventPage2.html" class="btn delicious-btn">Read More</a>
+                                </div>
+                            </div></li>
+                        <li class="myEvent Amusement" data-type="Amusement"><div class="single-top-catagory">
+                                <img src="pic/Amusement.jpg" alt="">
+                                <!-- Content -->
+                                <div class="top-cta-content">
+                                    <h3>Go to Amusement Park Together</h3>
+                                    <h6>Amusement</h6>
+                                    <a href="event/eventPage3.html" class="btn delicious-btn">Read More</a>
+                                </div></li>
+                        <li class="myEvent Game" data-type="Game"><div class="single-top-catagory">
+                                <img src="pic/Game.jpg" alt="">
+                                <!-- Content -->
+                                <div class="top-cta-content">
+                                    <h3>Find a Partner for League of Legends</h3>
+                                    <h6>Game</h6>
+                                    <a href="event/eventPage4.html" class="btn delicious-btn">Read More</a>
+                                </div>
+                            </div></li>
+                        <li class="myEvent Life" data-type="Life"><div class="single-top-catagory">
+                                <img src="pic/bg2.jpg" alt="">
+                                <!-- Content -->
+                                <div class="top-cta-content">
+                                    <h3>Enjoy Delicious Food Together</h3>
+                                    <h6>Life</h6>
+                                    <a href="event/eventPage6.html" class="btn delicious-btn">Read More</a>
+                                </div>
+                            </div></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        </div>
+            <script src="js/search.js"></script>
+            <script src="js/filter.js"></script>
+        
+        </body>
+        </html>

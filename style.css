@@ -631,9 +631,10 @@ textarea:focus {
 
 /* :: 7.0 Top Catagory Area */
 .single-top-catagory {
+  border-radius: 10px;
   position: relative;
   z-index: 2;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   overflow: hidden;
@@ -1024,7 +1025,9 @@ textarea:focus {
       margin-bottom: 0; }
 
 .receipe-ratings .ratings {
-  margin-bottom: 30px; }
+  margin-bottom: 60px; 
+
+}
 .receipe-ratings i {
   font-size: 18px;
   color: #fbb710;
@@ -1033,7 +1036,9 @@ textarea:focus {
 .single-preparation-step {
   position: relative;
   z-index: 1;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-right:50px; 
+}
   .single-preparation-step h4 {
     color: #474747;
     -webkit-box-flex: 0;
@@ -1385,10 +1390,12 @@ textarea:focus {
 /*# sourceMappingURL=style.css.map */
 
 .eventPic{
-  max-height:300px;
+  border-radius: 10px;
+  max-height:500px;
   width: 100%;
   position: relative;
-  margin-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 .myEvent{
   display:"none";
@@ -1411,4 +1418,164 @@ textarea:focus {
 .category-btn.active {
   background-color: #666;
   color: white;
+}
+.section{
+  margin: 0px;
+  padding: 8px;
+  background-color: #EEEEEE;
+  justify-content: center;
+  align-items: center;
+}
+.filterSection {
+  margin: 0px;
+  padding: 8px;
+  background-color: #EEEEEE;
+  justify-content: center;
+  align-items: center;
+  display: inline;
+}
+.filterSection li {
+  list-style: none;
+  margin: 0px;
+  padding: 6px;
+  display: inline;
+}
+.search{
+  margin: 0px;
+  padding: 5px；
+}
+.showItem {
+  display: list-item;
+}
+.hideItem {
+  display: none;
+}
+.container-home{
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.wrap-events{
+  width: 700px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 95px;
+}
+.wrap-event
+{
+    width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 95px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color:"white";
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.pop-container{
+  padding: 20px 40px;
+}
+
+.profile-container{
+  padding:30%;
+}
+
+.img-rounded{
+width: 500px;
+  height: 500px;
+  
+}
+
+
+.basic{
+  margin-left: 300px;
+border-style: solid;
+  border-width: 0.5px;
+  line-height: 150%;
+  width: 250px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 200%;
+  background-color: #e6ccff;
+}
+.profile{
+  margin-left: 300px;
+  margin-top: -10px;
+  text-shadow: 0.5px 0.5px black;
+  font-size: 120%;
 }

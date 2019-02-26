@@ -9,10 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Delicious - Food Blog Template | Home</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <title>Make More Friends</title>
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -35,86 +32,71 @@
                 </button>
           
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="nav nav-pills flex-column flex-sm-row">
                     <li class="nav-item active">
                       <a class="nav-link" href="#"
                         >Events<span class="sr-only">(current)</span></a
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">My Profile</a>
+                      <a class="nav-link" href="myProfile.html">My Profile</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Chat</a>
+                      <a class="nav-link" href="http://127.0.0.1:5000/">Chat</a>
                     </li>
                   </ul>
            </div>
-            </nav>
-    
-    
-        <div>
-            <!-- Receipe Post Search -->
-            <div class="">
-                <div class="container">
-                    <form action="#" method="post">
-                        <div class="row">
-                            <div class="col-12 col-lg-3">
-                                <select name="select1" id="select1">
-                                    <option value="1" onclick="filterSelection('all')">Categories</option>
-                                    <option value="1" onclick="filterSelection('Sports')">Sports</option>
-                                    <option value="1">Amusement</option>
-                                    <option value="1">Art</option>
-                                    <option value="1">Life</option>
-                                    <option value="1">Study</option>
-                                    <option value="1">Game</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                <select name="select1" id="select2">
-                                    <option value="1">Date</option>
-                                    <option value="1">Today</option>
-                                    <option value="1">This Week</option>
-                                    <option value="1">This Month</option>
-                                    <option value="1">Next Month</option>
-                                </select>
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                    <input type="text" name="search" onkeyup="myFunction()" placeholder="Search for event" id="myInput">
-                                </div>
-                                <div class="col-12 col-lg-3 text-right">
-                                    <button type="submit" class="btn delicious-btn">Search</button>
-                                </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="myBtnContainer">
-                <button class="category-btn active" onclick="filterSelection('all')"> Show all</button>
-                <button class="category-btn" onclick="filterSelection('Sports')"> Sports</button>
-                <button class="category-btn" onclick="filterSelection('Amusement')"> Amusement</button>
-                <button class="category-btn" onclick="filterSelection('Art')">Art</button>
-                <button class="category-btn" onclick="filterSelection('Life')">Life</button>
-                <button class="category-btn" onclick="filterSelection('Study')">Study</button>
-                <button class="category-btn" onclick="filterSelection('Game')">Game</button>
-        </div>
-        <section class="top-catagory-area section-padding-80-0">
+        </nav>
+        <div class="section">
+        <ul class="filterSection">
+            <li>
+                <strong>CATEGORY:&nbsp</strong>
+                <input checked="true" type="checkbox" value="Sports"/>
+                <label>Sports</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Amusement"/>
+                <label>Amusement</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Art"/>
+                <label>Art</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Life"/>
+                <label>Life</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Study"/>
+                <label>Study</label>
+            </li>
+            <li>
+                <input checked="true" type="checkbox" value="Game"/>
+                <label>Game</label>
+            </li>
+        </ul>
+            <input class="search" type="text" name="search" onkeyup="myFunction()" placeholder="Search your event" id="myInput">
+        
+    </div>
+        <div class="container-home">
+        <div class="wrap-events">
+        <section class="top-catagory-area ">
                 <div class="container" id="myEvents">
                     <ul id="myUL">
-                        <li class="myEvent Sports">
+                        <li class="myEvent Sports" data-type="Sports">
                                 <div class="single-top-catagory">
-                                        <img src="Sports.jpg" alt="">
+                                        <img src="pic/Sports.jpg" alt="">
                                         <!-- Content -->
                                         <div class="top-cta-content">
-                                            <h3>Play Basketable Together</h3>
+                                            <h3>Play Basketball Together</h3>
                                             <h6>Sports</h6>
                                             <a href="event/eventPage1.html" class="btn delicious-btn">Read More</a>
                                         </div>
                                     </div>
                         </li>
-                        <li class="myEvent Study" >
+                        <li class="myEvent Study" data-type="Study">
                                 <div class="single-top-catagory">
-                                    <img src="Study.jpg" alt="">
+                                    <img src="pic/Study.jpg" alt="">
                                     <!-- Content -->
                                     <div class="top-cta-content">
                                         <h3>A Reading Salon</h3>
@@ -123,8 +105,8 @@
                                     </div>
                                 </div>
                         </li>
-                        <li class="myEvent Art"><div class="single-top-catagory">
-                                <img src="Art.jpg" alt="">
+                        <li class="myEvent Art" data-type="Art"><div class="single-top-catagory">
+                                <img src="pic/Art.jpg" alt="">
                                 <!-- Content -->
                                 <div class="top-cta-content">
                                     <h3>Visit Art institute of Chicago Together</h3>
@@ -132,16 +114,16 @@
                                     <a href="event/eventPage2.html" class="btn delicious-btn">Read More</a>
                                 </div>
                             </div></li>
-                        <li class="myEvent Amusement"><div class="single-top-catagory">
-                                <img src="Amusement.jpg" alt="">
+                        <li class="myEvent Amusement" data-type="Amusement"><div class="single-top-catagory">
+                                <img src="pic/Amusement.jpg" alt="">
                                 <!-- Content -->
                                 <div class="top-cta-content">
                                     <h3>Go to Amusement Park Together</h3>
                                     <h6>Amusement</h6>
                                     <a href="event/eventPage3.html" class="btn delicious-btn">Read More</a>
                                 </div></li>
-                        <li class="myEvent Game"><div class="single-top-catagory">
-                                <img src="Game.jpg" alt="">
+                        <li class="myEvent Game" data-type="Game"><div class="single-top-catagory">
+                                <img src="pic/Game.jpg" alt="">
                                 <!-- Content -->
                                 <div class="top-cta-content">
                                     <h3>Find a Partner for League of Legends</h3>
@@ -149,23 +131,22 @@
                                     <a href="event/eventPage4.html" class="btn delicious-btn">Read More</a>
                                 </div>
                             </div></li>
-                        <li class="myEvent Life">
-                                <div class="single-top-catagory">
-                                    <img src="Life.jpg" alt="">
-                                    <!-- Content -->
-                                    <div class="top-cta-content">
-                                        <h3>Enjoy Delicious Food Together</h3>
-                                        <h6>Life</h6>
-                                        <a href="event/eventPage6.html" class="btn delicious-btn">Read More</a>
-                                    </div>
+                        <li class="myEvent Life" data-type="Life"><div class="single-top-catagory">
+                                <img src="pic/bg2.jpg" alt="">
+                                <!-- Content -->
+                                <div class="top-cta-content">
+                                    <h3>Enjoy Delicious Food Together</h3>
+                                    <h6>Life</h6>
+                                    <a href="event/eventPage6.html" class="btn delicious-btn">Read More</a>
                                 </div>
-                        </li>
-
+                            </div></li>
                     </ul>
                 </div>
-                </div>
             </section>
-            <script src="function.js"></script>
+        </div>
+        </div>
+            <script src="js/search.js"></script>
+            <script src="js/filter.js"></script>
+        
         </body>
-
         </html>

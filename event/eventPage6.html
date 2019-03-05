@@ -20,6 +20,39 @@
 </head>
 
 <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Make More Friends</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span> 
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav nav-pills flex-column flex-sm-row">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"
+                        >Event<span class="sr-only">(current)</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="../homePage.html">Home</a>
+                          </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../myProfile.html">My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../chat.html">Chat</a>
+                    </li>
+                  </ul>
+           </div>
+        </nav>
     <div class="container-home">
             <div class="wrap-event">
 <div class="receipe-post-area section-padding-20">
@@ -51,15 +84,8 @@
     
                         <div class="col-12 col-md-2">
                             <div class="receipe-ratings text-right my-8">
-                                <!--div class="ratings">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                                </div>-->
                                 <div class="ratings"></div>
-                                <a class="btn delicious-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Join</a>
+                                <button id="join" class="btn delicious-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Join</button>
                             </div>
                         </div>
                     </div>
@@ -72,7 +98,7 @@
                             <div class="pop-container">
                                 <h3 style="margin-bottom:20px;">Do you want to join this event?</h3>
                             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger" style="margin-left:40px;margin-right:40px;">Cancel</button>
-                            <button type="submit" onclick="document.getElementById('id01').style.display='none'" class="btn btn-success">Yes</button>
+                            <button type="button" onclick="buttonChange1()" class="btn btn-success">Yes</button>
                         </div>
                         </Form>
                     </div>
@@ -100,7 +126,7 @@
                                                 <h6>Tom</h6>
                                           </div>
                                           <div class="col">
-                                                <button class="btn btn-outline-success btn-sm">+ Add friend</button>
+                                                <button id="friend5" class="btn btn-outline-success btn-sm" onclick="buttonChange6()">+ Add friend</button>
                                           </div>
                                         </div>
                                         <div class="row" style="padding:15px;">
@@ -108,7 +134,7 @@
                                                         <h6>Meng</h6>
                                                   </div>
                                                   <div class="col">
-                                                        <button class="btn btn-outline-success btn-sm">+ Add friend</button>
+                                                        <button id = "friend1" class="btn btn-outline-success btn-sm" onclick="buttonChange2()">+ Add friend</button>
                                                   </div>
                                                 </div>
                                                 <div class="row" style="padding:15px;">
@@ -116,7 +142,7 @@
                                                                 <h6>Monia</h6>
                                                           </div>
                                                           <div class="col">
-                                                                <button class="btn btn-outline-success btn-sm">+ Add friend</button>
+                                                                <button id = "friend2" class="btn btn-outline-success btn-sm" onclick="buttonChange3()">+ Add friend</button>
                                                           </div>
                                                         </div>
                                                         <div class="row" style="padding:15px;">
@@ -124,7 +150,7 @@
                                                                         <h6>Jones</h6>
                                                                   </div>
                                                                   <div class="col">
-                                                                        <button class="btn btn-outline-success btn-sm">+ Add friend</button>
+                                                                        <button id = "friend3" class="btn btn-outline-success btn-sm" onclick="buttonChange4()">+ Add friend</button>
                                                                   </div>
                                                                 </div>
                                                                 <div class="row" style="padding:15px;">
@@ -132,7 +158,7 @@
                                                                                 <h6>Amy</h6>
                                                                           </div>
                                                                           <div class="col">
-                                                                                <button class="btn btn-outline-success btn-sm">+ Add friend</button>
+                                                                                <button id = "friend4" class="btn btn-outline-success btn-sm" onclick="buttonChange5()">+ Add friend</button>
                                                                           </div>
                                                                         </div>
                                                         
@@ -161,6 +187,8 @@
             }
         }
         </script>
+        <script src="../js/buttonChange.js"></script>
+
 </body>
 
 </html>

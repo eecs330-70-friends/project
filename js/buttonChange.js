@@ -18,3 +18,13 @@ function buttonChange4() {
     document.getElementById('friend3').disabled=true;
     document.getElementById('friend3').className="btn btn-outline-warning btn-sm"
 }
+function buttonChange5() {
+    document.getElementById('friend4').innerText='Waiting for Accept';
+    document.getElementById('friend4').disabled=true;
+    document.getElementById('friend4').className="btn btn-outline-warning btn-sm"
+}
+function buttonChange6() {
+    document.getElementById('friend5').innerText='Waiting for Accept';
+    document.getElementById('friend5').disabled=true;
+    document.getElementById('friend5').className="btn btn-outline-warning btn-sm"
+}

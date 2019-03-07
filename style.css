@@ -65,6 +65,12 @@ img {
   height: auto;
   max-width: 100%; }
 
+.img1 {
+  height:500px;
+  width:500px;
+  margin-top: 50px;
+}
+
 /* Spacing */
 .mt-15 {
   margin-top: 15px !important; }
@@ -1566,7 +1572,7 @@ width: 500px;
 
 
 .basic{
-  margin-left: 300px;
+  margin-left: 100px;
 border-style: solid;
   border-width: 0.5px;
   line-height: 150%;
@@ -1577,7 +1583,7 @@ border-style: solid;
   background-color: #e6ccff;
 }
 .profile{
-  margin-left: 300px;
+  margin-left: 100px;
   margin-top: -10px;
   text-shadow: 0.5px 0.5px black;
   font-size: 120%;

@@ -67,8 +67,8 @@ img {
 
 .img1 {
   height:500px;
-  width:500px;
-  margin-top: 50px;
+  width:400px;
+  margin-top: 150px;
 }
 
 /* Spacing */
@@ -1437,21 +1437,17 @@ textarea:focus {
 }
 .filterSection {
   margin: 0px;
-  padding: 8px;
-  background-color: #EEEEEE;
-  justify-content: center;
-  align-items: center;
-  display: inline;
+
 }
 .filterSection li {
   list-style: none;
   margin: 0px;
-  padding: 6px;
-  display: inline;
 }
 .search{
-  margin: 0px;
-  padding: 5px；
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #999;
+  outline:none;  
 }
 .showItem {
   display: list-item;
@@ -1470,7 +1466,7 @@ textarea:focus {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 20px;
   background: #9053c7;
   background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
   background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
@@ -1482,7 +1478,7 @@ textarea:focus {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-
+  float:left;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1491,6 +1487,41 @@ textarea:focus {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 95px;
+}
+.cardSection{
+  margin-right:50px;
+  margin-left:-150px;
+  width: 230px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  float:left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 40px;
+}
+.friendsSection{
+  text-align: center;
+  margin-right:10px;
+  margin-left:90px;
+  width: 330px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  float:left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 20px;
 }
 .wrap-event
 {
@@ -1573,7 +1604,7 @@ width: 500px;
 
 .basic{
   margin-left: 100px;
-border-style: solid;
+  border-style: solid;
   border-width: 0.5px;
   line-height: 150%;
   width: 250px;
@@ -1585,8 +1616,8 @@ border-style: solid;
 .profile{
   margin-left: 100px;
   margin-top: -10px;
-  text-shadow: 0.5px 0.5px black;
-  font-size: 120%;
+  font-size: 20px;
+  color:black;
 }
 
 * {

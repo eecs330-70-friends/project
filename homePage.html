@@ -39,7 +39,7 @@
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="myProfile.html">My Profile</a>
+                      <a class="nav-link" href="profile/profile.html">My Profile</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="chat.html">Chat</a>
@@ -47,38 +47,37 @@
                   </ul>
            </div>
         </nav>
-        <div class="section">
-        <ul class="filterSection">
-            <li>
-                <strong>CATEGORY:&nbsp</strong>
-                <input checked="true" type="checkbox" value="Sports"/>
-                <label>Sports</label>
-            </li>
-            <li>
-                <input checked="true" type="checkbox" value="Amusement"/>
-                <label>Amusement</label>
-            </li>
-            <li>
-                <input checked="true" type="checkbox" value="Art"/>
-                <label>Art</label>
-            </li>
-            <li>
-                <input checked="true" type="checkbox" value="Life"/>
-                <label>Life</label>
-            </li>
-            <li>
-                <input checked="true" type="checkbox" value="Study"/>
-                <label>Study</label>
-            </li>
-            <li>
-                <input checked="true" type="checkbox" value="Game"/>
-                <label>Game</label>
-            </li>
-        </ul>
-            <input class="search" type="text" name="search" onkeyup="myFunction()" placeholder="Search your event" id="myInput">
-        
-    </div>
         <div class="container-home">
+        <div style="display:inline">
+        <div class="cardSection">
+                <ul class="filterSection">
+                        <li>
+                            <input checked="true" type="checkbox" value="Sports"/>
+                            <label style="font-size: 15px">Sports</label>
+                        </li>
+                        <li>
+                            <input checked="true" type="checkbox" value="Amusement"/>
+                            <label style="font-size: 15px">Amusement</label>
+                        </li>
+                        <li>
+                            <input checked="true" type="checkbox" value="Art"/>
+                            <label style="font-size: 15px">Art</label>
+                        </li>
+                        <li>
+                            <input checked="true" type="checkbox" value="Life"/>
+                            <label style="font-size: 15px">Life</label>
+                        </li>
+                        <li>
+                            <input checked="true" type="checkbox" value="Study"/>
+                            <label style="font-size: 15px">Study</label>
+                        </li>
+                        <li>
+                            <input checked="true" type="checkbox" value="Game"/>
+                            <label style="font-size: 15px">Game</label>
+                        </li>
+                        <input  onfocus="click()" onblur="cancel()" class="search" type="text" name="search" onkeyup="myFunction()" placeholder="Search your event" id="myInput">
+                    </ul>
+        </div>
         <div class="wrap-events">
         <section class="top-catagory-area ">
                 <div class="container" id="myEvents">
@@ -143,10 +142,10 @@
                     </ul>
                 </div>
             </section>
+            </div>
         </div>
         </div>
             <script src="js/search.js"></script>
             <script src="js/filter.js"></script>
-        
         </body>
         </html>

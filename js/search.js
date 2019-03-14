@@ -14,6 +14,12 @@ function myFunction() {
         }
     }
 }
+function click(){
+    document.getElementsById("myInput").style.border = '1px solid red';
+}
+function cancel(){
+    document.getElementsById("myInput").style.border = '2px solid #009F00';
+}
 
 
 

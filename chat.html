@@ -94,22 +94,9 @@ body {
 .messages .message.left .text {
   color: #c48843;
 }
-.messages .message.right .avatar {
-  background-color: #fdbf68;
-  float: right;
-}
-.messages .message.right .text_wrapper {
-  background-color: #c7eafc;
-  margin-right: 20px;
-  float: right;
-}
-.messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
-  left: 100%;
-  border-left-color: #c7eafc;
-}
-.messages .message.right .text {
-  color: #45829b;
-}
+
+
+
 .messages .message.appeared {
   opacity: 1;
 }
@@ -266,7 +253,7 @@ body {
     };
     $(function () {
         var getMessageText, message_side, sendMessage;
-        message_side = 'right';
+        message_side = 'left';
         getMessageText = function () {
             var $message_input;
             $message_input = $('.message_input');
@@ -279,7 +266,6 @@ body {
             }
             $('.message_input').val('');
             $messages = $('.messages');
-            message_side = message_side === 'left' ? 'right' : 'left';
             message = new Message({
                 text: text,
                 message_side: message_side
@@ -296,9 +282,7 @@ body {
             }
         });
         sendMessage('Hello! :)');
-        setTimeout(function () {
-            return sendMessage('Hi! How are you?');
-        }, 1000);
+        message_side = 'right';
     });
 }.call(this));
 </script>
